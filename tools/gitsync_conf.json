@@ -1,0 +1,47 @@
+{
+  "globals": {
+    "storage-user": "DeployGit",
+    "storage-pwd": "1234",
+    "git-path": "git",
+    "domain-email": "otus.ru",
+    "lic-try-count": 5,
+    "plugins": {
+      "enable": [
+        "check-authors",
+        "sync-remote",
+        "increment"
+      ]
+    },
+    "plugins-config": {
+      "push-n-commits": 0,
+      "push-tags": true,
+      "skip-exists-tags": false,
+      "rename-module": true,
+      "rename-form": true,
+      "push": true
+    }
+  },
+  "repositories": [
+    {
+      "name": "otus",
+      "path": "e:/repo/otus-1c-hw-23-storages/cf",
+      "dir": "./src/cf",
+      "temp-dir": "",
+      "v8version": "8.3.27.1688",
+      "plugins-config": {
+        "URL": "https://github.com/AlekseyIlyin/otus-1c-hw-23.git"
+      }
+    },
+    {
+        "name": "YAXUNIT",
+        "extention": "YAXUNIT",
+        "path": "e:/repo/otus-1c-hw-23-storages/cfe/yaxunit",
+        "dir": "./src/cfe/yaxunit",
+        "temp-dir": "",
+        "v8version": "8.3.27.1688",
+        "plugins-config": {
+          "URL": "https://github.com/AlekseyIlyin/otus-1c-hw-23.git"
+        }
+     }
+  ]
+}
