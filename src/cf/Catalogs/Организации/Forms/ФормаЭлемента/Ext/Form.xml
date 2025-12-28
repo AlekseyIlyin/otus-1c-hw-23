@@ -21,6 +21,37 @@
 			<ContextMenu name="Наименование_КонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="8"/>
 		</InputField>
+		<UsualGroup name="ГруппаИННКПП" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИНН / КПП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ИННКПП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИННКППРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="ИНН" id="10">
+					<DataPath>Объект.ИНН</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИННКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="КПП" id="13">
+					<DataPath>Объект.КПП</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КППКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="КППРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<CheckBoxField name="ВалютныйУчет" id="5">
 			<DataPath>Объект.ВалютныйУчет</DataPath>
 			<EditMode>EnterOnInput</EditMode>
